@@ -16,10 +16,17 @@
  */
 
 #include <stdbool.h>
-#include <platform.h>
+#include <stdint.h>
+
+#include "platform.h"
+
+#include "drivers/bus.h"
 #include "drivers/io.h"
 #include "drivers/pwm_mapping.h"
 #include "drivers/timer.h"
+#include "drivers/pinio.h"
+#include "drivers/sensor.h"
+
 
 timerHardware_t timerHardware[] = {
     DEF_TIM(TIM4,   CH2, PB7,  TIM_USE_OUTPUT_AUTO,   1, 0), // S1 D(1,3,2)

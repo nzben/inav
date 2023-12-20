@@ -66,9 +66,9 @@
 #define UART3_TX_PIN            PC10
 #define UART3_RX_PIN            PC11
 
-#define USE_UART4
-#define UART4_TX_PIN            PA0
-#define UART4_RX_PIN            PA1
+// #define USE_UART4
+// #define UART4_TX_PIN            PA0
+// #define UART4_RX_PIN            PA1
 
 #define USE_UART5
 #define UART5_TX_PIN            PC12
@@ -83,7 +83,15 @@
 #define SOFTSERIAL_1_TX_PIN      PA2
 #define SOFTSERIAL_1_RX_PIN      PA2
 
-#define SERIAL_PORT_COUNT       8
+#define SERIAL_PORT_COUNT       7
+
+// *************** PINIO ***************************     2
+#define USE_PINIO
+#define USE_PINIOBOX
+#define PINIO1_PIN               PA1
+#define PINIO2_PIN               PA0
+#define PINIO1_FLAGS             PINIO_FLAGS_INVERTED
+#define PINIO2_FLAGS             PINIO_FLAGS_INVERTED
 
 /*
  * I2C
